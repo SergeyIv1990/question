@@ -8,6 +8,8 @@ const pool = mysql2.createPool({
     password : 'Sergey1990',
     database : 'Sergey'
 });
+
+
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.listen(3000, function(){console.log('server started')});
